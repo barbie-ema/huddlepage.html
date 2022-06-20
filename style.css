@@ -4,14 +4,28 @@
     box-sizing: border-box;
 
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 body{background-color:hsl(0, 3%, 7%)  ;
 display: block;
 place-items: center; min-height: 70vh;}
-main{display: grid;
-    gap: 3px; width: 250px;
-margin: auto;}
-main div{  text-align: center; margin: 2px; justify-content: center; }
+
+.mainbox{
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 2rem 7.5rem;
+  
+
+}
+@media screen and (max-width: 720px)
+{}
+@media screen and (min-width: 350px)
+  {}
+
+
+.main div{  text-align: center; margin: 2px; justify-content: center; }
 .grid-body {
     background-color: rgb(250, 245, 245);
   }
@@ -24,7 +38,30 @@ main div{  text-align: center; margin: 2px; justify-content: center; }
   .col-grid:hover {
     color: rgb(136, 230, 225);
   }
-  
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    margin: 0 auto;
+}
+#menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 7.5rem;
+
+}
+
+#menu button {
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding: 0.5rem 3rem;
+  border: thin solid #ccc;
+  outline: 0;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 0 3px #ccc;
+}
+#menu button:hover{background-color:hsl(330, 12%, 97%); color:  hsl(330, 1%, 72%); }
   .wrapper {
     max-width: 180%;
     
@@ -38,7 +75,7 @@ main div{  text-align: center; margin: 2px; justify-content: center; }
     gap: 10px;
     
   }
-  header button{background-color:hsl(320, 16%, 96%) ;color: rgb(29, 26, 26); border-radius: 20px; width: 8%; padding: 15px; border-color: black; align-items:flex-end ;}
+ 
   .box {
     max-width: 80%;
     /* height: 400px; */
@@ -105,6 +142,7 @@ main div{  text-align: center; margin: 2px; justify-content: center; }
             .leftboxx p{text-align: start;
                 color: rgb(139, 134, 134);
                 margin-right: 10px;} 
+                
                 .lastbox {
                     max-width: 50%;
                     /* height: 400px; */
